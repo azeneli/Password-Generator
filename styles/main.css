@@ -1,1 +1,45 @@
 /* CURRENTLY IN: styles/main.css */
+
+html {
+	font-size: 14px;
+}
+
+.content {
+	background-color: #ccc;
+	height: auto;
+}
+
+.projectDesc {
+	height: 50px;
+	width: 60%;
+	margin: 5% auto;
+	background-color: red;
+}
+
+.projectDesc-title {
+	font-size: 2rem;
+	padding: 1% 0;
+	text-align: center;
+}
+
+.button {
+	width: 50%;
+	padding: 3rem 0;
+	margin: 10% auto;
+	font-size: 2rem;
+	text-align: center;
+	background-color: purple;
+}
+
+.button--round {
+	border-radius: 30%/45%;
+	box-shadow: 0px 0px 5px black inset;
+}
+
+
+
+
+
+
+
+
