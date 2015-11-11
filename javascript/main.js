@@ -10,14 +10,21 @@
 
 		for(var i = 0; i <= len; ++i ){
 			var count = pattern.length;
-			var results = newPattern += pattern.charAt( Math.random() * count );	
+			newPattern += pattern.charAt( Math.random() * count );	
 		}
-
 		return newPattern;
 	}
 
-	var password = generatePassword();
-	console.log(password);
+	// var password = generatePassword();
+	// console.log(password);
+
+	// function getNewPassword(){
+	// 	$('.js-results').html( generatePassword() );
+	// }
+
+	$('.js-button').on('click', function() {
+		$('.js-results').html( generatePassword() ); 
+	});
 
 	// $('.js-button').on('click', function(){
 	
