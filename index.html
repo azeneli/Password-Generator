@@ -3,20 +3,24 @@
 <head>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0;">
-    <title>Password-Generator</title>
+    <title>Password Generator</title>
     <link rel='stylesheet' href='styles/reset.css'>
+    <link rel="stylesheet" href='styles/strength.css'>
     <link rel='stylesheet' href='styles/main.css'>
 </head>
 <body class="content">
 
 	<div class="projectDesc">
 		<p class="projectDesc-title">Click the button to generate a random password</p>
-		<div class="js-button button button--round">
-			Generate Password
-		</div>
+		<div class="js-button button button--round button-text">
+			<p class="button--text">Generate Password</p>
+		</div> <!-- .button -->
+		<div class="js-results password password-content button--round"></div>
+		<input id="myPassword" type="password" name="" value="" placeholder="Test Password Strength"/>
 	</div> <!-- .projectDesc -->	
 
     <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
+    <script src='javascript/strength.js'></script>
     <script src='javascript/main.js'></script>
 </body>
 </html>
